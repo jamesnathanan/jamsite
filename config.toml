@@ -1,4 +1,5 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'My JAMSite'
 theme = 'tale'
+copyright = 'Copyright 2021 Trilllab'
