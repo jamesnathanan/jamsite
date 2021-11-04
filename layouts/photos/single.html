@@ -7,15 +7,21 @@
         {{ .Site.Title }}
         <br>
         {{- range .Site.Pages }}
-        {{ .Title }}: {{ .URL }} <br>
+        {{ .Title }} by {{ .Params.Author }} <br>
         {{- end}}
         <hr>
 		{{ partial "single/title.html" . }}
 
+
 		{{ partial "single/header.html" . }}
 
-		<div style="padding: 1rem; background-color: powderblue;"><{{ .Content }}></div>
+        {{- if .Params.tags }}
+        {{ partial "tags.html" .Params.tags }}
+        {{- end }}
 
+		<div style="padding: 1rem; background-color: powderblue;">{{ .Content }}</div>
+
+        {{ partial "comments.html" . }}
 		{{ partial "single/footer.html" . }}
 	</div>
 

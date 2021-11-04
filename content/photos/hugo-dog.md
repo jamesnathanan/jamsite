@@ -2,6 +2,8 @@
 title: "Hugo Dog"
 date: 2021-10-30T02:33:28+07:00
 draft: true
+photoauthor: "Ray Viljeon"
+tags: ["photo", "dog", "tongue"]
 ---
 
 ## Hugo the Dog
